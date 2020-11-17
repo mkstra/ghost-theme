@@ -1,0 +1,95 @@
+{{!< default}}
+{{! insert everything in this file into the body tag of default.hbs }}
+<!-- index -->
+{{!--   <div class="archive"> --}}
+
+<h1 class="page__title"></h1>
+{{!--     <h3 class="archive__subtitle">Recent</h3> --}}
+{{!-- list-style-type: "\1F44D"; // thumbs up sign --}}
+{{!-- list-style-type: "\2727"; // thumbs up sign --}}
+{{!--     {{> "loop" }} --}}
+
+<div class="homepage-columns">
+    <section>
+        {{!--        <h1><a href="#newest" title="Link to section: § 'Newest'">Newest</a></h1> --}}
+        <h2 style="margin:0">Newest</h2>
+
+        <ul class="katakana">
+            {{#foreach posts}}
+            <li>
+                <a href="{{url}}" rel="permalink">
+                    {{title}}
+                </a>
+                </br>
+
+            </li>
+            {{/foreach}}
+
+
+        </ul>
+    </section>
+
+    <section style="margin-top: 1rem">
+
+
+    <a href="/play">Games and Programs
+        <div>
+            <div>
+                <image class="thumbnail-1" src="/content/images/polyphonic_200.gif" />
+                <image class="thumbnail-1" src="/content/images/piano_200.gif" />
+
+            </div>
+
+
+            <div>
+                <image class="thumbnail-1" src="/content/images/3dchem_200.gif" />
+                <image class="thumbnail-1" src="/content/images/soundman_200.gif" />
+
+            </div>
+        </div>
+
+    </a>
+</section>
+
+  <br/>
+
+</div>
+ <br/>
+ <br/>
+
+   <section>
+            <a href="/art">Fine Arts and Videos</a>
+
+        <div>
+
+            <a href="/art">
+                <image class="thumbnail-2" src="/content/images/art.jpg" />
+            </a>
+
+        </div>
+
+    </section>
+    <br />
+
+
+
+
+
+
+{{!--       <section> --}}
+{{!--       --}}{{!--        <h1><a href="#newest" title="Link to section: § 'Newest'">Newest</a></h1> --}}
+{{!--             <h2>Newest</h2> --}}
+{{!--                 <ul class="katakana"> --}}
+
+{{!--                     <li><a href="/newsletter/2020/10" id="whatever" class="previewArticle" data-popup-title="Popup test">Test 123</a></li> --}}
+{{!--                      <li><a href="/newsletter/2020/10" id="whatever" class="previewArticle" data-popup-title="Popup test">1a a 1332</a></li> --}}
+
+{{!--                  </ul> --}}
+{{!--              </section> --}}
+
+</div>
+<br>
+<br>
+{{> "subscribe" }}
+
+{{!--   </div> --}}

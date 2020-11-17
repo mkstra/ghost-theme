@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="themes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/flat-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/bad-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/not-a-theme.zip!/" />
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/multi-example.zip!/" />
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/nested-example.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

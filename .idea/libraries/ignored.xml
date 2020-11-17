@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ignored">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/current/node_modules/gscan/test/fixtures/themes/030-assets/ignored.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
