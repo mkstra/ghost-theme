@@ -1,0 +1,35 @@
+
+{{!-- {{#if @labs.subscribers}} --}}
+        <section class="gh-subscribe">{{!--                                                                                                 to {{@blog.title}} --}}
+{{!--          {{subscribe_form placeholder="Type your Email ↩︎"}} --}}
+
+
+         <form method="post" action="/subscribe/" id="" class="">
+             <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://www.dacapo.io/"><input class="referrer" type="hidden" name="referrer" value="https://www.dacapo.io/">
+
+             <div class="form-group" style="display: flex; max-width: 400px">
+                 <input class="subscribe-email" style="height: 44px" type="email" name="email" placeholder="  type your email ↩︎  ">
+                  <button id="" class="" type="submit"><span>Subscribe</span></button>
+
+             </div>
+
+         <script>
+             (function(g,h,o,s,t){
+                 var buster = function(b,m) {
+                     h[o]('input.'+b).forEach(function (i) {
+                         i.value=i.value || m;
+                     });
+                 };
+                 buster('location', g.location.href);
+                 buster('referrer', h.referrer);
+             })(window,document,'querySelectorAll','value');
+         </script>
+
+         </form>
+
+{{!--             <span class="gh-subscribe-rss"> --}}
+{{!--             or --}}
+{{!--             <a href="https://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS --}}
+{{!--             </a></span> --}}
+        </section>
+{{!--         {{/if}} --}}

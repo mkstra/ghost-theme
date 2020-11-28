@@ -1,0 +1,59 @@
+.blockquote {
+    border-left: .25rem solid #3eb0ef !important;
+    color: inherit !important;
+    font-style: inherit !important;
+    font-size: 0.85rem !important;
+    margin: 1em 2em 2em 1em !important;
+}
+.is-collapsible {
+    overflow: initial !important;
+}
+.toc1 {
+    display: flex !important;
+   }
+.toc2 {
+margin: 1rem;
+padding: 1rem;
+border: 2px solid #40e0d063;
+}
+
+.toc-list-item {
+        font-size: small !important;
+
+}
+.kg-image {
+    border: 0.6px black solid !important;
+}
+
+.author__urls li {
+
+    white-space: inherit !important;
+}
+
+#main {
+    padding: 0 !important;
+    /*margin-top: 0 !important; */
+   
+}
+
+.author__urls-wrapper {
+
+    margin-top: 2rem !important;
+}
+
+.post_preview_markus {
+    display: flex;
+    min-width: 50vw;
+
+}
+
+.masthead__inner-wrap {
+    padding: 0 !important
+}
+.page_title {
+    visibility: hidden !important;
+}
+
+.subscribe-email {
+    border: 2px solid #47e4fd;
+}

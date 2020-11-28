@@ -1,0 +1,47 @@
+{{!< default}}
+{{! Post }}
+<div style="max-width: 700px; align-self: center">
+{{#post}}
+<article class="postpage" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="{{title}}">
+    <meta itemprop="description" content="{{excerpt}}">
+    <meta itemprop="datePublished" content="{{date format="MMMM D, YYYY"}}">
+    <div class="page__inner-wrap">
+        <header>
+            <h1 class="page__title" itemprop="headline">{{title}}</h1>
+{{!--             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{{reading_time}}</p> --}}
+        </header>
+{{!--         {{post_meta}} --}}
+        {{> "post_meta" }}
+
+        <section class="page__content {{post_class}}" itemprop="text">
+
+            {{content}}
+
+        </section>
+        <footer>
+
+
+{{!--        {{tags}} --}}
+
+{{!--         {{subscribe}} --}}
+
+        <hr>
+        <br>
+
+        {{> "subscribe" }}
+        <br>
+
+
+        </footer>
+
+
+    </div>
+    {{!-- {{> "comments" }}
+    </article>
+    <!-- {{comment_id}} -->
+    {{#get "posts" limit="4" filter="id:-{{comment_id}}" }}
+        {{> "related" recentposts=posts }}
+    {{/get}} --}}
+{{/post}}
+</div>

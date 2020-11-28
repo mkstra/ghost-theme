@@ -1,0 +1,28 @@
+<div class="homepage_columns">
+    <h3><i>Recently Updated</i></h3>
+    <ul class="katakana">
+    {{#get "posts" limit="3" order="published_at desc"}}
+    {{#foreach posts}}
+        <li>
+                    <a href="{{url}}" rel="permalink">
+                        {{title}}
+                    </a>
+                    </br>
+
+                </li>
+
+        {{!-- {{#has tag="short"}}
+            <div id="main">
+                <h1>{{title}}</h1>
+                <div >{{content}}</div>
+                        
+
+            </div>
+            <br/>
+        {{/has}} --}}
+
+        {{/foreach}}
+
+    {{/get}}
+    </ul>
+</div>

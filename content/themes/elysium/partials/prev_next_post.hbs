@@ -1,0 +1,13 @@
+       <nav class="pagination">
+            {{#prev_post}}
+            <a href="{{url}}" title="{{title}}">{{title}}</a>
+            {{else}}
+{{!--             <a href="#" class="pagination--pager disabled">Previous</a> --}}
+            {{/prev_post}}
+
+            {{#next_post}}
+            <a href="{{url}}" title="{{title}}">{{title}}</a>
+            {{else}}
+            <a href="#">{{title}}</a>
+            {{/next_post}}
+        </nav>

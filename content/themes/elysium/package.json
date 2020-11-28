@@ -1,0 +1,44 @@
+{
+  "name": "elysium",
+  "description": "Idiosyncratic Theme.",
+  "version": "0.3",
+  "engines": {
+    "ghost": ">=2.0.0"
+  },
+  "author": {
+    "name": "Markus Strasser",
+    "email": "strasser.ms@gmail.com",
+    "url": "dacapo.io"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Blog"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "elysium"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkstra/ghost-theme.git"
+  },
+  "bugs": "https://github.com/mkstra/ghost-theme/issues",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-zip": "^4.2.0",
+    "node-sass": "^4.9.4"
+  },
+  "config": {
+    "posts_per_page": 30
+  }
+}

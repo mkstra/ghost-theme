@@ -1,0 +1,16 @@
+     <p class="page__taxonomy">
+                <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+                <span itemprop="keywords">
+                    {{#if tags}}
+
+                        {{#primary_tag}}
+                            <a href="{{url}}" class="page__taxonomy-item page__taxonomy-item-primary" rel="tag">{{name}}</a><span class="sep">, </span>
+                        {{/primary_tag}}
+
+                        {{#foreach tags from="2"}}
+                            <a href="{{url}}" class="page__taxonomy-item" rel="tag">{{name}}</a><span class="sep">, </span>
+                        {{/foreach}}
+
+                    {{/if}}
+                </span>
+            </p>
