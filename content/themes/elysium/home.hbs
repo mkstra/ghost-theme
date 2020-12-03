@@ -5,72 +5,80 @@
 
 <div id="homepage-1">
 
-<h1 class="page__title"></h1>
+    <h1 class="page__title"></h1>
 
-<div class="homepage-columns">
-    <section style="margin-top:1rem">
-        {{!--        <h1><a href="#newest" title="Link to section: § 'Newest'">Newest</a></h1> --}}
-        {{!-- {{> "recent" }} --}}
-
-
-        <h2 style="margin:0"> <i>Knowledge and Society </i></h2>
-
-        <ul class="katakana">
-            {{#foreach posts}}
-            {{^has tag="art, poetry"}}
-            <li>
-                <a href="{{url}}" rel="permalink">
-                    {{title}}
-                </a>
-                </br>
-
-            </li>
-
-            {{/has}}
-            {{/foreach}}
-        </ul>
+    <div class="homepage-columns">
+        {{!-- style="margin-top:1rem" --}}
+        <section>
+            {{!--        <h1><a href="#newest" title="Link to section: § 'Newest'">Newest</a></h1> --}}
+            {{!-- {{> "recent" }} --}}
 
 
-    </section>
-    <section style="margin-top:1rem">
-        <h2 style="margin:0"> <i>Art and Poetry </i></h2>
-        <ul class="hiragana">
-            <li>
-                <a href="/sketch">Sketches</a> and <a href="/about">Artworks</a>
+            <h2 style="margin:0"> <i>Knowledge and Society </i></h2>
 
-            </li>
-            <br />
-            {{#foreach posts}}
-            {{#has tag="art, poetry"}}
-            <li>
-                <a href="{{url}}" rel="permalink">
-                    {{title}}
-                </a>
-                </br>
+            <ul class="katakana">
+                {{#foreach posts}}
+                {{^has tag="art, poetry, notes, note"}}
+                <li>
+                    <a href="{{url}}" rel="permalink">
+                        {{title}}
+                    </a>
+                    </br>
 
-            </li>
+                </li>
 
-            {{/has}}
-            {{/foreach}}
+                {{/has}}
+                {{/foreach}}
+            </ul>
 
 
-        </ul>
+        </section>
+        {{!-- style="margin-top:1rem" --}}
+        <section > 
+            <h2 style="margin:0"> <i>Art and Poetry </i></h2>
+            <ul class="hiragana">
+                <li>
+                    <a href="/sketch">Sketches</a> and <a href="/about">Artworks</a>
 
-        {{!-- <br/> --}}
-    </section>
+                </li>
+                <br />
+                {{#foreach posts}}
+                {{#has tag="art, poetry"}}
+                <li>
+                    <a href="{{url}}" rel="permalink">
+                        {{title}}
+                    </a>
+                    </br>
+
+                </li>
+
+                {{/has}}
+                {{/foreach}}
+
+
+            </ul>
+
+            {{!-- <br/> --}}
+        </section>
+
+    </div>
+
+        <div class="homepage-columns">
+            <section>
+                    {{> "games" }}
+
+            </section>
+            <section>
+                    {{> "art" }}
+                    <br/>
+                            {{> "subscribe" }}
+
+
+            </section>
+</div>
+
+    <br />
+    <hr />
+    {{!-- {{> "recent" }} --}}
 
 </div>
-<div>
-{{> "subscribe" }}
-{{> "games" }}
-
-</div>
-
-<br />
-{{> "art" }} 
-<hr/>
-{{> "recent" }}
-
-</div>
-
-{{!--   </div> --}}
