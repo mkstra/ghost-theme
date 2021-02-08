@@ -3,9 +3,16 @@
 <!-- index -->
 {{!--   <div class="archive"> --}}
 
+    <div class="home-info">
+{{#foreach posts}}
+       {{#has tag="$"}}
+        {{content}}
+       {{/has}}
+    {{/foreach}}
+        </div>
 <div id="homepage-1">
 
-    <h1 class="page__title"></h1>
+    {{!-- <h1 class="page__title"></h1> --}}
 
     <div class="homepage-columns">
         {{!-- style="margin-top:1rem" --}}
@@ -18,7 +25,7 @@
 
             <ul class="katakana">
                 {{#foreach posts}}
-                {{^has tag="art, poetry, notes, note"}}
+                {{^has tag="art, poetry, note, WIP, $"}}
                 <li>
                     <a href="{{url}}" rel="permalink">
                         {{title}}
@@ -69,15 +76,37 @@
 
             </section>
             <section>
-                    {{> "art" }}
-                    <br/>
-                            {{> "subscribe" }}
 
+                    <a href="/notes"><h3>Notes: Half Baked</h3></a>
+                    <em>
+                        Things I'm thinking about...
+                    </em>
+                    {{!-- <br/> --}}
+                        <ul class="greek">
 
+                    {{#foreach posts}}
+                    {{#has tag="note, WIP"}}
+                        
+                    <li>
+                        <a href="{{url}}" rel="permalink">
+                            {{title}}
+                        </a>
+
+                    </li>
+
+                    {{/has}}
+                    {{/foreach}}
+                    </ul>
             </section>
-</div>
 
-    <br />
+
+    </div>
+
+                        <br/>
+
+                        {{> "subscribe" }}
+            {{> "art" }}
+
     <hr />
     {{!-- {{> "recent" }} --}}
 

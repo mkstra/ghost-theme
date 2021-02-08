@@ -1,6 +1,5 @@
 {
   "active-version": "3.37.1",
   "cli-version": "1.15.2",
-  "name": "ghost-local",
-  "running": "development"
+  "name": "ghost-local"
 }

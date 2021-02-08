@@ -267,6 +267,7 @@ border: 2px solid #40e0d063;
 :root {
     --purplehaze: #8365dccc;
     --velvet: #8f240ccc;
+    --teal: #5dfad0cc;
   }
 
 
@@ -6230,6 +6231,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 }
 
 .postpage .page__inner-wrap {
+    
     clear: both;
     width: 100%;
     float: left;
@@ -6562,6 +6564,24 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     display: table
 }
 
+.home-info {
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    align-self:center;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+@media (min-width: 500px) {
+    .home-info {
+        width: 65vw;
+    }
+}
+
+
 .comment:not(:last-child) {
     border-bottom: 1px solid #f2f3f3
 }
@@ -6666,7 +6686,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     flex-wrap: wrap; */
 }
 .homepage-columns > * {
-    padding-right: 3rem;
+    padding-right: 2rem;
 
 }
 
@@ -6698,9 +6718,9 @@ ul.hiragana {
     color: var(--velvet)
 
 }
-ul.georgian {
-    list-style-type: georgian;
-    color: var(--purplehaze)
+ul.greek {
+    list-style-type: lower-greek;
+    color: var(--teal)
 
 }
 .archive {
