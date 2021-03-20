@@ -1,0 +1,23 @@
+{{#get "posts" include="tags" order="published_at desc"}}
+   {{!-- <ul class="georgian"> --}}
+   {{#foreach posts}}
+        {{#has tag="WIP, wip, note"}}
+                        <a href="{{url}}" rel="permalink">
+                            <div style="font-size: 1.5rem">
+                            {{title}}
+                            </div>
+                        </a>
+
+                            <a href="{{url}}" rel="permalink" 
+                            style="text-decoration: none; margin-left: 1rem; color: dimgrey">
+
+                        {{content words="50"}} ...
+                        </a>
+
+
+                        </a>
+
+        {{/has}}
+    {{/foreach}}
+    {{!-- </ul> --}}
+{{/get}}
