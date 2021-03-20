@@ -42,7 +42,7 @@ Most of the social media links are found in the `sidebar.hbs` or footer section 
 
 ### Blog Title
 
-Although most places reference the blog title using `@blog.title` helper, I had the need for a bit stylized title for use at the top of the page. 
+Although most places reference the blog title using `@sitetitle` helper, I had the need for a bit stylized title for use at the top of the page. 
 
 `_sass/_masthead.scss` contains the style definition for `masthead_left` and `masthead_right` classes which are combined to produce the two colored look.
 
