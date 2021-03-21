@@ -142,14 +142,12 @@ body {
 }
 
 header, footer {
-  padding: 15px 25px;
+    margin: 0;
+
+/* padding: 15px 25px;
   background-color: #000;
-  color: #fff;
+  color: #fff; */
 }
-
-
-
-
 
 
 
@@ -6300,6 +6298,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     padding: 0 !important;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #post-page {
@@ -6876,10 +6875,11 @@ ul.greek {
 
 @media (min-width: 64em) {
     .archive {
-        width: 83.05085%;
+        /* elysium change */
+        /* width: 83.05085%; */
         /*float: right;*/
         margin-right: 0;
-        padding-left: 4.23729%
+        /* padding-left: 4.23729% */
     }
 }
 

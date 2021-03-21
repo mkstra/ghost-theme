@@ -1,35 +1,43 @@
-
 {{!-- {{#if @labs.subscribers}} --}}
-        <section style="max-width: 80vw" class="gh-subscribe">{{!--                                                                                                 to {{@site.title}} --}}
-{{!--          {{subscribe_form placeholder="Type your Email ↩︎"}} --}}
+<section style="max-width: 80vw" class="gh-subscribe">{{!-- to {{@site.title}} --}}
+    {{!-- {{subscribe_form placeholder="Type your Email ↩︎"}} --}}
 
 
-         <form method="post" action="/subscribe/" id="" class="">
-             <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://www.dacapo.io/"><input class="referrer" type="hidden" name="referrer" value="https://www.dacapo.io/">
+    <form method="post" action="/subscribe/" id="" class="">
+        <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"
+            value="https://www.markusstrasser.org/"><input class="referrer" type="hidden" name="referrer"
+            value="https://www.markusstrasser.org/">
 
-             <div class="form-group" style="display: flex; max-width: 400px">
-                 <input class="subscribe-email" style="height: 44px" type="email" name="email" placeholder="  type your email ↩︎  ">
-                  <button id="" class="" type="submit"><span>Subscribe</span></button>
+        {{!-- <div class="form-group" style="display: flex; max-width: 400px">
+            <input class="subscribe-email" style="height: 44px" type="email" name="email"
+                placeholder="  type your email ↩︎  ">
+            <button id="" class="" type="submit"><span>Subscribe</span></button>
+            <a href="#/portal/signup">Subscribe</a>
 
-             </div>
+            <form data-members-form>
+                <input data-members-email type="email" required="true" />
+                <button type="submit">Continue</button>
+            </form>
 
-         <script>
-             (function(g,h,o,s,t){
-                 var buster = function(b,m) {
-                     h[o]('input.'+b).forEach(function (i) {
-                         i.value=i.value || m;
-                     });
-                 };
-                 buster('location', g.location.href);
-                 buster('referrer', h.referrer);
-             })(window,document,'querySelectorAll','value');
-         </script>
+        </div> --}}
 
-         </form>
+        <script>
+            (function (g, h, o, s, t) {
+                var buster = function (b, m) {
+                    h[o]('input.' + b).forEach(function (i) {
+                        i.value = i.value || m;
+                    });
+                };
+                buster('location', g.location.href);
+                buster('referrer', h.referrer);
+            })(window, document, 'querySelectorAll', 'value');
+        </script>
 
-{{!--             <span class="gh-subscribe-rss"> --}}
-{{!--             or --}}
-{{!--             <a href="https://cloud.feedly.com/#subscription/feed/{{@site.url}}/rss/">via RSS --}}
-{{!--             </a></span> --}}
-        </section>
-{{!--         {{/if}} --}}
+    </form>
+
+    {{!-- <span class="gh-subscribe-rss"> --}}
+        {{!-- or --}}
+        {{!-- <a href="https://cloud.feedly.com/#subscription/feed/{{@site.url}}/rss/">via RSS --}}
+            {{!-- </a></span> --}}
+</section>
+{{!-- {{/if}} --}}
